@@ -1,0 +1,60 @@
+{
+  "id": "/subscriptions/c43cb968-d91d-4ce4-909e-b1848d107f91/resourceGroups/system.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local",
+  "name": "local",
+  "type": "Microsoft.InfrastructureInsights.Admin/regionHealths",
+  "location": "local",
+  "tags": null,
+  "properties": {
+    "usageMetrics": [
+      {
+        "name": "Physical memory",
+        "metricsValue": [
+          {
+            "name": "Used",
+            "unit": "GB",
+            "value": 111.2109375
+          },
+          {
+            "name": "Available",
+            "unit": "GB",
+            "value": 400.6953125
+          }
+        ]
+      },
+      {
+        "name": "Physical storage",
+        "metricsValue": [
+          {
+            "name": "Used",
+            "unit": "TB",
+            "value": 0.44758548215031624
+          },
+          {
+            "name": "Available",
+            "unit": "TB",
+            "value": 2.0336767248809338
+          }
+        ]
+      },
+      {
+        "name": "Public IP address pools",
+        "metricsValue": [
+          {
+            "name": "Used",
+            "unit": "One",
+            "value": 33.0
+          },
+          {
+            "name": "Available",
+            "unit": "One",
+            "value": 222.0
+          }
+        ]
+      }
+    ],
+    "alertSummary": {
+      "criticalAlertCount": 0,
+      "warningAlertCount": 6
+    }
+  }
+}

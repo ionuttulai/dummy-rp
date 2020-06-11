@@ -1,0 +1,81 @@
+{
+  "subsystems": {
+    "replication": {
+      "metrics": {
+        "configuration": {
+          "enabled": true,
+          "scopeName": "metrics",
+          "namespace": "Microsoft.InfrastructureInsights.Admin",
+          "dataProviderType": "Arm",
+          "refreshInterval": "00:00:15",
+          "resources": [
+            {
+              "identifierType": "Group",
+              "resourceDescription": "/subscriptions/$defaultSubscription/resourceGroups/system.$location/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/$location"
+            }
+          ]
+        }
+      },
+      "alerts": {
+        "configuration": {
+          "enabled": true,
+          "scopeName": "alerts",
+          "namespace": "Microsoft.InfrastructureInsights.Admin",
+          "dataProviderType": "Arm",
+          "refreshInterval": "00:05:00",
+          "resources": [
+            {
+              "identifierType": "Group",
+              "resourceDescription": "/subscriptions/$defaultSubscription/resourceGroups/system.$location/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/$location/alerts"
+            }
+          ]
+        }
+      },
+      "availabilitySets": {
+        "configuration": {
+          "enabled": true,
+          "scopeName": "availabilitySets",
+          "namespace": "Microsoft.InfrastructureInsights.Admin",
+          "dataProviderType": "Arm",
+          "refreshInterval": "00:00:30",
+          "resources": [
+            {
+              "identifierType": "Group",
+              "resourceDescription": "/subscriptions/$defaultSubscription/resourceGroups/system.$location/providers/Microsoft.Compute/availabilitySets"
+            }
+          ]
+        }
+      },
+      "currentState": {
+        "configuration": {
+          "enabled": true,
+          "scopeName": "currentState",
+          "namespace": "Custom",
+          "dataProviderType": "Configuration",
+          "refreshInterval": "00:00:20",
+          "resources": [
+            {
+              "identifierType": "Virtual",
+              "resourceDescription": "replication"
+            }
+          ]
+        }
+      },
+      "deviceProperties": {
+        "configuration": {
+          "enabled": true,
+          "scopeName": "deviceProperties",
+          "namespace": "Custom",
+          "dataProviderType": "Custom",
+          "refreshInterval": "01:00:00",
+          "resources": [
+            {
+              "identifierType": "Virtual",
+              "resourceDescription": "deviceProperties"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "subsystems": {
+    "replication": {
+      "alerts": {
+        "configuration": {
+          "enabled": true,
+          "scopeName": "alerts",
+          "namespace": "Microsoft.InfrastructureInsights.Admin",
+          "dataProviderType": "Arm",
+          "refreshInterval": "00:15:00",
+          "resources": [
+            {
+              "identifierType": "Group",
+              "resourceDescription": "/subscriptions/$defaultSubscription/resourceGroups/system.$location/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/$location/alerts"
+            }
+          ]
+        }
+      },
+      "metrics": {
+        "configuration": {
+          "enabled": true,
+          "scopeName": "metrics",
+          "namespace": "Microsoft.InfrastructureInsights.Admin",
+          "dataProviderType": "Arm",
+          "refreshInterval": "00:05:00",
+          "resources": [
+            {
+              "identifierType": "Group",
+              "resourceDescription": "/subscriptions/$defaultSubscription/resourceGroups/system.$location/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/$location"
+            }
+          ]
+        }
+      },
+      "fabricAdmin": {
+        "configuration": {
+          "enabled": true,
+          "scopeName": "fabricAdmin",
+          "namespace": "Microsoft.Fabric.Admin",
+          "dataProviderType": "Arm",
+          "refreshInterval": "00:15:00",
+          "resources": [
+            {
+              "identifierType": "Group",
+              "resourceDescription": "/subscriptions/$defaultSubscription/resourcegroups/system.$location/providers/Microsoft.Fabric.Admin/fabricLocations/$location/scaleUnitNodes"
+            }
+          ]
+        }
+      },
+      "deviceProperties": {
+        "configuration": {
+          "enabled": true,
+          "scopeName": "deviceProperties",
+          "namespace": "Custom",
+          "dataProviderType": "Custom",
+          "refreshInterval": "01:00:00",
+          "resources": [
+            {
+              "identifierType": "Virtual",
+              "resourceDescription": "deviceProperties"
+            }
+          ]
+        }
+      },
+      "updateInfo": {
+        "configuration": {
+          "enabled": false,
+          "scopeName": "updateInfo",
+          "namespace": "Microsoft.Update.Admin",
+          "dataProviderType": "Arm",
+          "refreshInterval": "00:15:00",
+          "resources": [
+            {
+              "identifierType": "Group",
+              "resourceDescription": "/subscriptions/$defaultSubscription/resourceGroups/system.$location/providers/Microsoft.Update.Admin/updateLocations/$location"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

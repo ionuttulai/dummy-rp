@@ -1,0 +1,34 @@
+﻿{
+  "value": [
+    {
+      "name": "vm1",
+      "id": "/subscriptions/f0afa71f-45a1-4bc2-aa46-f30cbfc9867d/resourceGroups/iotulai-rg/providers/Microsoft.Compute/availabilitySets/vm1",
+      "type": "Microsoft.Compute/availabilitySets",
+      "location": "local",
+      "tags": null,
+      "properties": {
+        "platformUpdateDomainCount": 5,
+        "platformFaultDomainCount": 2,
+        "virtualMachines": []
+      },
+      "sku": {
+        "name": "Aligned"
+      }
+    },
+    {
+      "name": "vm2",
+      "id": "/subscriptions/f0afa71f-45a1-4bc2-aa46-f30cbfc9867d/resourceGroups/iotulai-rg/providers/Microsoft.Compute/availabilitySets/vm2",
+      "type": "Microsoft.Compute/availabilitySets",
+      "location": "local",
+      "tags": null,
+      "properties": {
+        "platformUpdateDomainCount": 1,
+        "platformFaultDomainCount": 2,
+        "virtualMachines": []
+      },
+      "sku": {
+        "name": "Aligned"
+      }
+    }
+  ]
+}

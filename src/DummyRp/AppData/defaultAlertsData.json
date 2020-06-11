@@ -1,0 +1,501 @@
+{
+  "value": [
+    {
+      "id": "/subscriptions/c43cb968-d91d-4ce4-909e-b1848d107f91/resourceGroups/system.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local/alerts/07531f7f-13f8-4b25-b656-d106b692d7f9",
+      "name": "local/07531f7f-13f8-4b25-b656-d106b692d7f9",
+      "type": "Microsoft.InfrastructureInsights.Admin/regionHealths/alerts",
+      "location": "local",
+      "tags": null,
+      "properties": {
+        "createdTimestamp": "2019-08-14T23:15:21.213Z",
+        "description": [
+          {
+            "text": "One or more external certificates will expire within 90 days.The expiring certificates have the following Subject Names:",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": " CN=azurestack.external ",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": "and Subject Alternate Names:",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": " DNS Name = azurestack.external, DNS Name=azurestack, DNS Name = *.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name = *.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name = *.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name = portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name = management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name = graph.local.azurestack.external.",
+            "type": "Text"
+          }
+        ],
+        "faultHash": "",
+        "alertId": "07531f7f-13f8-4b25-b656-d106b692d7f9",
+        "faultTypeId": "CertificateExpiration.ExternalCert.Warning",
+        "lastUpdatedTimestamp": "2019-09-12T01:32:00.329Z",
+        "alertProperties": {
+          "83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7": "{\"IssuerName\":\"CN=MSIT CA Z2\",\"SubjectName\":\"CN=azurestack.external\",\"ExpirationTimeInUtc\":\"2019-11-12T20:51:32Z\",\"ThumbPrint\":\"83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7\",\"SubjectAltName\":\"DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external\"}",
+          "subjectNamesOfCertificates": "CN=azurestack.external",
+          "subjectAltNamesOfCertificates": "DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external",
+          "thumbPrintsOfCertificates": "83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7",
+          "issuerNamesOfCertificates": "CN=MSIT CA Z2",
+          "expirationTimesOfCertificatesInUtc": "11/12/2019 8:51 PM"
+        },
+        "remediation": [
+          {
+            "text": "1. Follow the steps to rotate external certificates at ",
+            "type": "Text"
+          },
+          {
+            "linkType": "Uri",
+            "uri": "https://aka.ms/azsrotatecertificates",
+            "type": "LinkBegin"
+          },
+          {
+            "text": "https://aka.ms/azsrotatecertificates",
+            "type": "Text"
+          },
+          { "type": "LinkEnd" },
+          {
+            "text": ". ",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": "2. If the problem persists, please contact support. Before you do, start the log file collection process using the guidance from ",
+            "type": "Text"
+          },
+          {
+            "linkType": "Uri",
+            "uri": "https://aka.ms/azurestacklogfiles",
+            "type": "LinkBegin"
+          },
+          {
+            "text": "https://aka.ms/azurestacklogfiles",
+            "type": "Text"
+          },
+          { "type": "LinkEnd" },
+          {
+            "text": ".",
+            "type": "Text"
+          }
+        ],
+        "resourceProviderRegistrationId": "e56bc7b8-c8b5-4e25-b00c-4f951effb22c",
+        "severity": "Warning",
+        "state": "Active",
+        "title": "Pending external certificate expiration",
+        "impactedResourceId": "/subscriptions/c43cb968-d91d-4ce4-909e-b1848d107f91/resourceGroups/system.local/providers/Microsoft.Fabric.Admin/fabricLocations/local/infraRoleInstances/AZS-XRP01",
+        "impactedResourceDisplayName": "AZS-XRP01",
+        "preview": "False",
+        "hasValidRemediationAction": false,
+        "remediationHistory": {}
+      }
+    },
+    {
+      "id": "/subscriptions/c43cb968-d91d-4ce4-909e-b1848d107f91/resourceGroups/system.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local/alerts/30219894-2c78-4a08-9006-e3028392752c",
+      "name": "local/30219894-2c78-4a08-9006-e3028392752c",
+      "type": "Microsoft.InfrastructureInsights.Admin/regionHealths/alerts",
+      "location": "local",
+      "tags": null,
+      "properties": {
+        "createdTimestamp": "2019-08-14T23:15:23.892Z",
+        "description": [
+          {
+            "text": "One or more external certificates will expire within 90 days. The expiring certificates have the following Subject Names:",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": " CN=azurestack.external ",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": "and Subject Alternate Names:",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": " DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external.",
+            "type": "Text"
+          }
+        ],
+        "faultHash": "",
+        "alertId": "30219894-2c78-4a08-9006-e3028392752c",
+        "faultTypeId": "CertificateExpiration.ExternalCert.Warning",
+        "lastUpdatedTimestamp": "2019-09-12T01:33:14.731Z",
+        "alertProperties": {
+          "83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7": "{\"IssuerName\":\"CN=MSIT CA Z2\",\"SubjectName\":\"CN=azurestack.external\",\"ExpirationTimeInUtc\":\"2019-11-12T20:51:32Z\",\"ThumbPrint\":\"83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7\",\"SubjectAltName\":\"DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external\"}",
+          "subjectNamesOfCertificates": "CN=azurestack.external",
+          "subjectAltNamesOfCertificates": "DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external",
+          "thumbPrintsOfCertificates": "83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7",
+          "issuerNamesOfCertificates": "CN=MSIT CA Z2",
+          "expirationTimesOfCertificatesInUtc": "11/12/2019 8:51 PM"
+        },
+        "remediation": [
+          {
+            "text": "1. Follow the steps to rotate external certificates at ",
+            "type": "Text"
+          },
+          {
+            "linkType": "Uri",
+            "uri": "https://aka.ms/azsrotatecertificates",
+            "type": "LinkBegin"
+          },
+          {
+            "text": "https://aka.ms/azsrotatecertificates",
+            "type": "Text"
+          },
+          { "type": "LinkEnd" },
+          {
+            "text": ". ",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": "2. If the problem persists, please contact support. Before you do, start the log file collection process using the guidance from ",
+            "type": "Text"
+          },
+          {
+            "linkType": "Uri",
+            "uri": "https://aka.ms/azurestacklogfiles",
+            "type": "LinkBegin"
+          },
+          {
+            "text": "https://aka.ms/azurestacklogfiles",
+            "type": "Text"
+          },
+          { "type": "LinkEnd" },
+          {
+            "text": ".",
+            "type": "Text"
+          }
+        ],
+        "resourceProviderRegistrationId": "e56bc7b8-c8b5-4e25-b00c-4f951effb22c",
+        "severity": "Warning",
+        "state": "Active",
+        "title": "Pending external certificate expiration",
+        "impactedResourceId": "/subscriptions/c43cb968-d91d-4ce4-909e-b1848d107f91/resourceGroups/system.local/providers/Microsoft.Fabric.Admin/fabricLocations/local/infraRoleInstances/AZS-ADFS01",
+        "impactedResourceDisplayName": "AZS-ADFS01",
+        "preview": "False",
+        "hasValidRemediationAction": false,
+        "remediationHistory": {}
+      }
+    },
+    {
+      "id": "/subscriptions/c43cb968-d91d-4ce4-909e-b1848d107f91/resourceGroups/system.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local/alerts/4a43cacf-2710-424d-a866-db1c6a40624a",
+      "name": "local/4a43cacf-2710-424d-a866-db1c6a40624a",
+      "type": "Microsoft.InfrastructureInsights.Admin/regionHealths/alerts",
+      "location": "local",
+      "tags": null,
+      "properties": {
+        "createdTimestamp": "2019-08-14T23:15:19.009Z",
+        "description": [
+          {
+            "text": "One or more external certificates will expire within 90 days. The expiring certificates have the following Subject Names:",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": " CN=azurestack.external ",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": "and Subject Alternate Names:",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": " DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external.",
+            "type": "Text"
+          }
+        ],
+        "faultHash": "",
+        "alertId": "4a43cacf-2710-424d-a866-db1c6a40624a",
+        "faultTypeId": "CertificateExpiration.ExternalCert.Warning",
+        "lastUpdatedTimestamp": "2019-09-12T01:29:19.786Z",
+        "alertProperties": {
+          "83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7": "{\"IssuerName\":\"CN=MSIT CA Z2\",\"SubjectName\":\"CN=azurestack.external\",\"ExpirationTimeInUtc\":\"2019-11-12T20:51:32Z\",\"ThumbPrint\":\"83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7\",\"SubjectAltName\":\"DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external\"}",
+          "subjectNamesOfCertificates": "CN=azurestack.external",
+          "subjectAltNamesOfCertificates": "DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external",
+          "thumbPrintsOfCertificates": "83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7",
+          "issuerNamesOfCertificates": "CN=MSIT CA Z2",
+          "expirationTimesOfCertificatesInUtc": "11/12/2019 8:51 PM"
+        },
+        "remediation": [
+          {
+            "text": "1. Follow the steps to rotate external certificates at ",
+            "type": "Text"
+          },
+          {
+            "linkType": "Uri",
+            "uri": "https://aka.ms/azsrotatecertificates",
+            "type": "LinkBegin"
+          },
+          {
+            "text": "https://aka.ms/azsrotatecertificates",
+            "type": "Text"
+          },
+          { "type": "LinkEnd" },
+          {
+            "text": ". ",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": "2. If the problem persists, please contact support. Before you do, start the log file collection process using the guidance from ",
+            "type": "Text"
+          },
+          {
+            "linkType": "Uri",
+            "uri": "https://aka.ms/azurestacklogfiles",
+            "type": "LinkBegin"
+          },
+          {
+            "text": "https://aka.ms/azurestacklogfiles",
+            "type": "Text"
+          },
+          { "type": "LinkEnd" },
+          {
+            "text": ".",
+            "type": "Text"
+          }
+        ],
+        "resourceProviderRegistrationId": "e56bc7b8-c8b5-4e25-b00c-4f951effb22c",
+        "severity": "Warning",
+        "state": "Active",
+        "title": "Pending external certificate expiration",
+        "impactedResourceId": "/subscriptions/c43cb968-d91d-4ce4-909e-b1848d107f91/resourceGroups/system.local/providers/Microsoft.Fabric.Admin/fabricLocations/local/infraRoleInstances/AZS-ACS01",
+        "impactedResourceDisplayName": "AZS-ACS01",
+        "preview": "False",
+        "hasValidRemediationAction": false,
+        "remediationHistory": {}
+      }
+    },
+    {
+      "id": "/subscriptions/c43cb968-d91d-4ce4-909e-b1848d107f91/resourceGroups/system.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local/alerts/84be532f-233e-4525-9426-73ffdeee5a0d",
+      "name": "local/84be532f-233e-4525-9426-73ffdeee5a0d",
+      "type": "Microsoft.InfrastructureInsights.Admin/regionHealths/alerts",
+      "location": "local",
+      "tags": null,
+      "properties": {
+        "createdTimestamp": "2019-08-14T23:15:30.908Z",
+        "description": [
+          {
+            "text": "One or more external certificates will expire within 90 days. The expiring certificates have the following Subject Names:",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": " CN=azurestack.external ",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": "and Subject Alternate Names:",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": " DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external.",
+            "type": "Text"
+          }
+        ],
+        "faultHash": "",
+        "alertId": "84be532f-233e-4525-9426-73ffdeee5a0d",
+        "faultTypeId": "CertificateExpiration.ExternalCert.Warning",
+        "lastUpdatedTimestamp": "2019-09-12T01:32:38.761Z",
+        "alertProperties": {
+          "83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7": "{\"IssuerName\":\"CN=MSIT CA Z2\",\"SubjectName\":\"CN=azurestack.external\",\"ExpirationTimeInUtc\":\"2019-11-12T20:51:32Z\",\"ThumbPrint\":\"83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7\",\"SubjectAltName\":\"DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external\"}",
+          "subjectNamesOfCertificates": "CN=azurestack.external",
+          "subjectAltNamesOfCertificates": "DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external",
+          "thumbPrintsOfCertificates": "83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7",
+          "issuerNamesOfCertificates": "CN=MSIT CA Z2",
+          "expirationTimesOfCertificatesInUtc": "11/12/2019 8:51 PM"
+        },
+        "remediation": [
+          {
+            "text": "1. Follow the steps to rotate external certificates at ",
+            "type": "Text"
+          },
+          {
+            "linkType": "Uri",
+            "uri": "https://aka.ms/azsrotatecertificates",
+            "type": "LinkBegin"
+          },
+          {
+            "text": "https://aka.ms/azsrotatecertificates",
+            "type": "Text"
+          },
+          { "type": "LinkEnd" },
+          {
+            "text": ". ",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": "2. If the problem persists, please contact support. Before you do, start the log file collection process using the guidance from ",
+            "type": "Text"
+          },
+          {
+            "linkType": "Uri",
+            "uri": "https://aka.ms/azurestacklogfiles",
+            "type": "LinkBegin"
+          },
+          {
+            "text": "https://aka.ms/azurestacklogfiles",
+            "type": "Text"
+          },
+          { "type": "LinkEnd" },
+          {
+            "text": ".",
+            "type": "Text"
+          }
+        ],
+        "resourceProviderRegistrationId": "e56bc7b8-c8b5-4e25-b00c-4f951effb22c",
+        "severity": "Warning",
+        "state": "Active",
+        "title": "Pending external certificate expiration",
+        "impactedResourceId": "/subscriptions/c43cb968-d91d-4ce4-909e-b1848d107f91/resourceGroups/system.local/providers/Microsoft.Fabric.Admin/fabricLocations/local/infraRoleInstances/AZS-WASP01",
+        "impactedResourceDisplayName": "AZS-WASP01",
+        "preview": "False",
+        "hasValidRemediationAction": false,
+        "remediationHistory": {}
+      }
+    },
+    {
+      "id": "/subscriptions/c43cb968-d91d-4ce4-909e-b1848d107f91/resourceGroups/system.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local/alerts/898430cf-e991-4dc4-b572-8958824cd7cc",
+      "name": "local/898430cf-e991-4dc4-b572-8958824cd7cc",
+      "type": "Microsoft.InfrastructureInsights.Admin/regionHealths/alerts",
+      "location": "local",
+      "tags": null,
+      "properties": {
+        "createdTimestamp": "2019-07-31T04:13:45.075Z",
+        "description": [
+          {
+            "text": "Automatic backups are currently disabled. Infrastructure backups have not been created in the past 24 hours. This warning will appear every 24 hours until the issue is resolved.",
+            "type": "Text"
+          }
+        ],
+        "faultHash": "",
+        "faultId": "9cadd26b-48aa-45ad-ab72-e89e79b23edd",
+        "alertId": "898430cf-e991-4dc4-b572-8958824cd7cc",
+        "faultTypeId": "AzureStack.BackupController.BackupSchedulerPausedFault",
+        "lastUpdatedTimestamp": "2019-09-11T23:58:34.562Z",
+        "alertProperties": {},
+        "remediation": [
+          {
+            "text": "1. Address the issues that require the automatic backups to be disabled. ",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": " 2. After all issues preventing backups are resolved, navigate to infrastructure backup and configure the settings to enable automatic backups.",
+            "type": "Text"
+          }
+        ],
+        "resourceProviderRegistrationId": "6a59b605-3466-402b-af12-7cab1d614e3e",
+        "severity": "Warning",
+        "state": "Active",
+        "title": "Automatic backups are disabled.",
+        "impactedResourceId": "/subscriptions/c43cb968-d91d-4ce4-909e-b1848d107f91/resourceGroups/system.local/providers/Microsoft.Backup.Admin/",
+        "impactedResourceDisplayName": "Infrastructure backup",
+        "preview": "False",
+        "hasValidRemediationAction": false,
+        "remediationHistory": {}
+      }
+    },
+    {
+      "id": "/subscriptions/c43cb968-d91d-4ce4-909e-b1848d107f91/resourceGroups/system.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local/alerts/aa0e15de-1e28-4ec3-97cd-b4ff7d6e13a7",
+      "name": "local/aa0e15de-1e28-4ec3-97cd-b4ff7d6e13a7",
+      "type": "Microsoft.InfrastructureInsights.Admin/regionHealths/alerts",
+      "location": "local",
+      "tags": null,
+      "properties": {
+        "createdTimestamp": "2019-08-14T23:15:31.576Z",
+        "description": [
+          {
+            "text": "One or more external certificates will expire within 90 days. The expiring certificates have the following Subject Names:",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": " CN=azurestack.external ",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": "and Subject Alternate Names:",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": " DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external.",
+            "type": "Text"
+          }
+        ],
+        "faultHash": "",
+        "alertId": "aa0e15de-1e28-4ec3-97cd-b4ff7d6e13a7",
+        "faultTypeId": "CertificateExpiration.ExternalCert.Warning",
+        "lastUpdatedTimestamp": "2019-09-12T01:32:35.003Z",
+        "alertProperties": {
+          "83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7": "{\"IssuerName\":\"CN=MSIT CA Z2\",\"SubjectName\":\"CN=azurestack.external\",\"ExpirationTimeInUtc\":\"2019-11-12T20:51:32Z\",\"ThumbPrint\":\"83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7\",\"SubjectAltName\":\"DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external\"}",
+          "subjectNamesOfCertificates": "CN=azurestack.external",
+          "subjectAltNamesOfCertificates": "DNS Name=azurestack.external, DNS Name=azurestack, DNS Name=*.blob.local.azurestack.external, DNS Name=*.queue.local.azurestack.external, DNS Name=*.table.local.azurestack.external, DNS Name=*.vault.local.azurestack.external, DNS Name=*.adminvault.local.azurestack.external, DNS Name=adminportal.local.azurestack.external, DNS Name=portal.local.azurestack.external, DNS Name=adminmanagement.local.azurestack.external, DNS Name=management.local.azurestack.external, DNS Name=adfs.local.azurestack.external, DNS Name=graph.local.azurestack.external",
+          "thumbPrintsOfCertificates": "83E04DD9CFCBA471FF442316F9DAFAD8A9A9ADE7",
+          "issuerNamesOfCertificates": "CN=MSIT CA Z2",
+          "expirationTimesOfCertificatesInUtc": "11/12/2019 8:51 PM"
+        },
+        "remediation": [
+          {
+            "text": "1. Follow the steps to rotate external certificates at ",
+            "type": "Text"
+          },
+          {
+            "linkType": "Uri",
+            "uri": "https://aka.ms/azsrotatecertificates",
+            "type": "LinkBegin"
+          },
+          {
+            "text": "https://aka.ms/azsrotatecertificates",
+            "type": "Text"
+          },
+          { "type": "LinkEnd" },
+          {
+            "text": ". ",
+            "type": "Text"
+          },
+          { "type": "NewLine" },
+          {
+            "text": "2. If the problem persists, please contact support. Before you do, start the log file collection process using the guidance from ",
+            "type": "Text"
+          },
+          {
+            "linkType": "Uri",
+            "uri": "https://aka.ms/azurestacklogfiles",
+            "type": "LinkBegin"
+          },
+          {
+            "text": "https://aka.ms/azurestacklogfiles",
+            "type": "Text"
+          },
+          { "type": "LinkEnd" },
+          {
+            "text": ".",
+            "type": "Text"
+          }
+        ],
+        "resourceProviderRegistrationId": "e56bc7b8-c8b5-4e25-b00c-4f951effb22c",
+        "severity": "Warning",
+        "state": "Active",
+        "title": "Pending external certificate expiration",
+        "impactedResourceId": "/subscriptions/c43cb968-d91d-4ce4-909e-b1848d107f91/resourceGroups/system.local/providers/Microsoft.Fabric.Admin/fabricLocations/local/infraRoleInstances/AZS-WAS01",
+        "impactedResourceDisplayName": "AZS-WAS01",
+        "preview": "False",
+        "hasValidRemediationAction": false,
+        "remediationHistory": {}
+      }
+    }
+  ]
+}
